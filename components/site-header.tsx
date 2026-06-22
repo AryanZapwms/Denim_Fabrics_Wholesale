@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Layers, Menu, MessageCircle, X } from "lucide-react"
+import { Menu, MessageCircle, X } from "lucide-react"
 
 const navLinks = [
   { label: "Fabrics", href: "#categories" },
@@ -18,13 +19,15 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <Layers className="h-5 w-5" />
-          </span>
-          <span className="font-heading text-lg font-extrabold tracking-tight text-foreground">
-            Indigo Mills
-          </span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="https://www.denimfabricswholesale.co.za/cdn/shop/files/denimfabrics-website.png?v=1692796842&width=435"
+            alt="Denim Fabrics Wholesale"
+            width={160}
+            height={48}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

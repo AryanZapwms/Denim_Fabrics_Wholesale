@@ -1,4 +1,5 @@
-import { Layers, Mail, MapPin, Phone } from "lucide-react"
+import Image from "next/image"
+import { Mail, MapPin, Phone } from "lucide-react"
 
 const columns = [
   {
@@ -21,13 +22,14 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground text-primary">
-                <Layers className="h-5 w-5" />
-              </span>
-              <span className="font-heading text-lg font-extrabold tracking-tight">
-                Indigo Mills
-              </span>
+            <a href="#" className="flex items-center">
+              <Image
+                src="https://www.denimfabricswholesale.co.za/cdn/shop/files/denimfabrics-website.png?v=1692796842&width=435"
+                alt="Denim Fabrics Wholesale"
+                width={160}
+                height={48}
+                className="h-10 w-auto object-contain brightness-0 invert"
+              />
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-primary-foreground/70">
               Premium denim fabric manufacturer and wholesale supplier delivering
@@ -45,7 +47,7 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-accent" />
-                sales@indigomills.example
+                sales@denimwholesale.com
               </li>
             </ul>
           </div>
@@ -72,7 +74,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/15 pt-8 text-sm text-primary-foreground/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Indigo Mills. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Denim Fabrics Wholesale. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="transition-colors hover:text-primary-foreground">
               Privacy

@@ -15,7 +15,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'Indigo Mills — Premium Denim Fabric Wholesale Supplier',
+  title: 'Denim Fabrics Wholesale — Premium Denim Fabric Supplier',
   description:
     'Source premium denim fabric directly from manufacturers. Export quality, factory-direct pricing, flexible MOQ, and worldwide shipping for brands and garment makers.',
   generator: 'v0.app',
