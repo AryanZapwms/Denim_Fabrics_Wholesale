@@ -4,6 +4,7 @@ import { TrustBar } from "@/components/trust-bar"
 import { Categories } from "@/components/categories"
 import { Catalog } from "@/components/catalog"
 import { WhyChooseUs } from "@/components/why-choose-us"
+import { VideoShowcase } from "@/components/video-showcase"
 import { ProcessTimeline } from "@/components/process-timeline"
 import { Industries } from "@/components/industries"
 import { ComparisonTable } from "@/components/comparison-table"
@@ -22,6 +23,7 @@ export default function Page() {
         <Categories />
         <Catalog />
         <WhyChooseUs />
+        <VideoShowcase />
         <ProcessTimeline />
         <Industries />
         <ComparisonTable />
